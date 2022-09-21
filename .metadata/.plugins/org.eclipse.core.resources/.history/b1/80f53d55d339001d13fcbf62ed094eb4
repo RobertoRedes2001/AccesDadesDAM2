@@ -1,0 +1,28 @@
+package es.florida.seccio1;
+
+import java.io.File;
+import java.util.ArrayList;
+
+public class AP7 {
+
+	public static void main(String[] args) {
+			// TODO Auto-generated method stub
+		File psp = new File(args[0]);
+		ArrayList<String[]>array = new ArrayList<>();
+		if(args.length==1) {
+			array.push(psp.list());
+		}else {
+			for(int i=1;i>args.length;i++) {
+				FiltroExtension extender = new FiltroExtension(args[i]);
+				array.push(psp.list(extender));
+			}			
+		}
+		
+		for(int i=0;i<array.size();i++) {
+			System.out.println(array[i]);
+		}
+		
+		
+	}
+
+}

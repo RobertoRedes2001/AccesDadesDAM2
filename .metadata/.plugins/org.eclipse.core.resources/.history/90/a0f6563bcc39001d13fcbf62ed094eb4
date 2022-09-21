@@ -1,0 +1,24 @@
+package es.florida.seccio1;
+
+import java.io.File;
+import java.util.Scanner;
+
+public class AP6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		String dir = sc.nextLine();
+		String ext = sc.nextLine();
+		if(ext.isEmpty()) {
+			
+		}
+		FiltroExtension extender = new FiltroExtension(ext);
+		File psp = new File(dir);
+		String[] array = psp.list(extender);
+		for(int i=0;i<array.length;i++) {
+			System.out.println(array[i]);
+		}
+	}
+
+}
