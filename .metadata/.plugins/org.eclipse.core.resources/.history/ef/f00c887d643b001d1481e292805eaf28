@@ -1,0 +1,38 @@
+package es.florida.seccio1;
+
+import java.io.File;
+import java.util.Scanner;
+
+public class AP9 {
+
+	public static void getInformacio() {
+
+	}
+
+	public static void creaCarpeta() {
+
+	}
+
+	public static void creaFitxer() {
+
+	}
+
+	public static void elimina(File arxiu) {
+
+	}
+
+	public static void renomena(File arxiu) {
+		File nouArx = new File("arxiuNou.txt");
+        if (arxiu.renameTo(nouArx)) {
+            System.out.println("arxiu renombrat");
+        } else {
+            System.out.println("error");
+        }
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

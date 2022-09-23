@@ -1,0 +1,32 @@
+package es.florida.seccio1;
+
+import java.io.File;
+
+public class AP9 {
+
+	public static void getInformacio() {
+
+	}
+
+	public static void creaCarpeta() {
+
+	}
+
+	public static void creaFitxer() {
+
+	}
+
+	public static void elimina(File arxiu) {
+
+	}
+
+	public static void renomena(File arxiu) {
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
