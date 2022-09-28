@@ -83,7 +83,7 @@ public class AP9 {
 	public static void mostrarMenu() {
 		System.out.println("GESTOR D'ARXIUS Y DIRECTORIS FLORIDA");
 		System.out.println("====================================");
-		System.out.println("1.Mostrar Informacio");
+		System.out.println("1.Mostrar Informació");
 		System.out.println("2.Crear directori");
 		System.out.println("3.Crear fitxer");
 		System.out.println("4.Eliminar");

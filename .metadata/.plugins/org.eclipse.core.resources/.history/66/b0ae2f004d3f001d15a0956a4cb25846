@@ -27,13 +27,13 @@ public class AP9 {
 	}	
 
 	public static void creaCarpeta() {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Indica nom del directori: ");
-		String nom = sc.nextLine();
-		File directori = new File(nom);
 		if(directori.exists()) {
 			System.out.println("Directori ja exists");
 		}else {
+			Scanner teclat = new Scanner(System.in);
+			System.out.println("Indica nom del directori: ");
+			String nom = teclat.nextLine();
+			File directori = new File(nom);
 			directori.mkdirs();
 			System.out.println("Directori ja creat");
 		}
@@ -42,16 +42,11 @@ public class AP9 {
 
 	public static void creaFitxer() {
 		try {
-			Scanner sc = new Scanner(System.in);
-			System.out.println("Indica nom del directori: ");
-			String nom = sc.nextLine();
-			File fitxer = new File(nom);
-			if(fitxer.exists()) {
-				System.out.println("Fixter ja existent");
-			}else {
-				fitxer.createNewFile();
-				System.out.println("Fixter creat");
-			}
+			FileWriter fw = new FileWriter("deuchos2.txt");
+			BufferedWriter bw = new BufferedWriter(fw);
+			bw.write("1999, vaya verano.");
+			bw.close();
+			fw.close();
 		}catch(IOException e) {
 			e.printStackTrace();
 		}
@@ -83,7 +78,7 @@ public class AP9 {
 	public static void mostrarMenu() {
 		System.out.println("GESTOR D'ARXIUS Y DIRECTORIS FLORIDA");
 		System.out.println("====================================");
-		System.out.println("1.Mostrar Informacio");
+		System.out.println("1.Mostrar Informació");
 		System.out.println("2.Crear directori");
 		System.out.println("3.Crear fitxer");
 		System.out.println("4.Eliminar");
@@ -106,7 +101,7 @@ public class AP9 {
 				getInformacio(arx);
 				break;
 			case 2:
-				creaCarpeta();
+				creaCarpeta(arx);
 				break;
 			case 3:
 				creaFitxer();

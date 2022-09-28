@@ -95,7 +95,7 @@ public class AP9 {
 		
 		Scanner sc = new Scanner(System.in);
 		int option=0;
-		File arx = new File(args[0]);
+		File arx = new File(args[1]);
 		
 		do {
 			mostrarMenu();
