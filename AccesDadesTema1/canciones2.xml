@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<canciones>
+    <cancion id="1">
+        <titol>1</titol>
+        <artista>The Who</artista>
+        <any>1965</any>
+        <format>Vinyl</format>
+    </cancion>
+    <cancion id="2">
+        <titol>2</titol>
+        <artista>The What</artista>
+        <any>1987</any>
+        <format>Viny2</format>
+    </cancion>
+    <cancion id="3">
+        <titol>3</titol>
+        <artista>The Where</artista>
+        <any>1986</any>
+        <format>Viny3</format>
+    </cancion>
+    <cancion id="4">
+        <titol>4</titol>
+        <artista>The When</artista>
+        <any>2009</any>
+        <format>Viny4</format>
+    </cancion>
+    <cancion id="5">
+        <titol>5</titol>
+        <artista>The Why</artista>
+        <any>1999</any>
+        <format>Viny5</format>
+    </cancion>
+</canciones>

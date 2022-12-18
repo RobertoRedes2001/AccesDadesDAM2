@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="es.florida.miniproyecto">
+	<class name="Biblioteca" table="titles">
+		<id name="id" column="id">
+		<generator class="increment"/>
+		</id>
+		<property name="titol" type="string" column="title"/>
+		<property name="autor" type="string" column="author"/>
+		<property name="any" type="int" column="year"/>
+		<property name="editorial" type="string" column="editorial"/>
+		<property name="pagines" type="int" column="pages"/>
+	</class>
+</hibernate-mapping>
